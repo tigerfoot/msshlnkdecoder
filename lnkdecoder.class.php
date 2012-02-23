@@ -270,7 +270,7 @@ class MSshlnk {
     $this->get_AccessTime();
     $this->get_WriteTime();      
     foreach ( $this->LinkFlags as $key => $val) {
-        if ($this->H_FLAG[$key][1] == true) {
+        if ($this->H_FLAG[$key][1] === true) {
             $func="parse_$key";
             $this->$func();
           }
